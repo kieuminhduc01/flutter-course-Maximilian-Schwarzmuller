@@ -7,13 +7,19 @@ void main() {
         body: Container(
           decoration: BoxDecoration(
             gradient: LinearGradient(
-              colors: [Colors.deepPurple, Colors.indigo],
+              colors: [
+                Colors.deepPurple,
+                Colors.deepOrange,
+              ],
               begin: Alignment.topLeft,
               end: Alignment.bottomRight,
             ),
           ),
           child: const Center(
-            child: Text('Hello Duc'),
+            child: Text(
+              'Hello Duc',
+              style: TextStyle(color: Colors.white, fontSize: 28),
+            ),
           ),
         ),
       ),

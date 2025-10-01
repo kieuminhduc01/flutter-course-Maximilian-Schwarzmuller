@@ -1,3 +1,4 @@
+import 'package:first/styled_text.dart';
 import 'package:flutter/material.dart';
 
 class GradientContainer extends StatelessWidget {
@@ -17,10 +18,7 @@ class GradientContainer extends StatelessWidget {
         ),
       ),
       child: const Center(
-        child: Text(
-          'Hello Duc',
-          style: TextStyle(color: Colors.white, fontSize: 28),
-        ),
+        child: StyledText(),
       ),
     );
   }

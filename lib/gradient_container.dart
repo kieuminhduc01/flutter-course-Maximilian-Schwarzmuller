@@ -6,6 +6,9 @@ const endAlignment = Alignment.bottomRight;
 
 class GradientContainer extends StatelessWidget {
   const GradientContainer(this.color1, this.color2, {super.key});
+  const GradientContainer.purple({super.key})
+    : color1 = Colors.purple,
+      color2 = Colors.green;
 
   final Color color1;
   final Color color2;
@@ -23,8 +26,11 @@ class GradientContainer extends StatelessWidget {
           end: endAlignment,
         ),
       ),
-      child: const Center(
-        child: StyledText('Hello world'),
+      child: Center(
+        child: Image.asset(
+          'assets/images/dice-1.png',
+          width: 200,
+        ),
       ),
     );
   }
